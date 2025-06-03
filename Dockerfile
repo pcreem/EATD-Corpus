@@ -20,4 +20,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # 設置啟動命令
-CMD ["python", "chatbot.py"]
+CMD ["python", "telegram_bot.py"]
