@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 import torch
@@ -19,7 +19,7 @@ emotion_model.eval()
 whisper_model = whisper.load_model("base")
 
 # 從環境變數中讀取 Telegram API Token
-load_dotenv()
+# load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not TOKEN:
